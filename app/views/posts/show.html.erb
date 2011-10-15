@@ -1,0 +1,19 @@
+<p id="notice">This is Flash notice {inside show} <%= notice %></p>
+<p id="alert">This is Flash alert {inside show} <%= alert %></p>
+Generated at <%= Time.now %>
+
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @post.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
+
+
